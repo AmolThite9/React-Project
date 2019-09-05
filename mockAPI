@@ -1,0 +1,88 @@
+---
+  swagger: "2.0"
+  info:
+    version: "None"
+    title: "None"
+    description: "None"
+    termsOfService: "None"
+    contact:
+      name: ""
+  host: "https://demo9319979.mockable.io"
+  basePath: "/"
+  schemes:
+    - "https"
+    - "http"
+  consumes:
+    - "application/json"
+  produces:
+    - "application/json"
+  tags:
+    - name: demo9319979
+      description: https://demo9319979.mockable.io
+
+  paths:
+    
+    /GetEmpDetails:
+      
+      get:
+        description: ""
+        operationId: "Get Employee Details"
+        tags:
+          - demo9319979
+        produces:
+          - "application/json"
+        responses:
+          "200":
+            description: ""
+        
+      
+      
+    
+    /GetEmpLeaveDetail:
+      
+      get:
+        description: ""
+        operationId: "Leave Status"
+        tags:
+          - demo9319979
+        produces:
+          - "application/json"
+        responses:
+          "200":
+            description: ""
+        
+      
+      
+    
+    /login:
+      
+      get:
+        description: "Login API"
+        operationId: "login"
+        tags:
+          - demo9319979
+        produces:
+          - "application/json"
+        responses:
+          "200":
+            description: ""
+        
+      
+      
+    
+    /pendingRequests:
+      
+      get:
+        description: ""
+        operationId: "GET /pendingRequests"
+        tags:
+          - demo9319979
+        produces:
+          - "application/json"
+        responses:
+          "200":
+            description: ""
+        
+      
+      
+    

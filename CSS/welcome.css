@@ -1,0 +1,30 @@
+
+                    .table {
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                        color: #6c757d;
+                        text-align: center;
+                    }
+                    .table-responsive {
+                        display: block;
+                        width: 100%;
+                        overflow-x: auto;
+                    }
+                    tr {
+                        display: table-row;
+                        vertical-align: inherit;
+                        border-color: inherit;
+                    }
+                    thead {
+                        display: table-header-group;
+                        vertical-align: middle;
+                        border-color: inherit;
+                    }
+                    .table td, .table th {
+                        width: auto;
+                        padding: .85rem;
+                        vertical-align: middle;
+                        glyph-orientation-horizontal:inherit;
+                        border-top: 1px solid #dee2e6;
+                    }
+                    
