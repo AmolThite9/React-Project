@@ -4,6 +4,7 @@ import LeaveApply from './LeaveApply'
 import './CSS/login.css'
 import axios from 'axios';
 import PendingRequests from './PendingRequests'
+import CONSTANTS from './CONSTANTS';
 
 class Welcome extends React.Component {
     constructor(props) {
@@ -32,7 +33,7 @@ class Welcome extends React.Component {
 
     async clickLeaveStatus() {
         let leaves = []
-        await axios.get('http://demo9319979.mockable.io/GetEmpLeaveDetail')
+        await axios.get(CONSTANTS.HOST_URL + CONSTANTS.GET_EMP_LEAVE_DETAILS)
         .then(function (response) {
             leaves= response.data          
         })
@@ -44,7 +45,7 @@ class Welcome extends React.Component {
 
     async clickPendingRequests() {
         let pendingRequests = []
-        await axios.get('http://demo9319979.mockable.io/pendingRequests').then(function (response) {
+        await axios.get(CONSTANTS.HOST_URL + CONSTANTS.PENDING_REQUEST).then(function (response) {
             pendingRequests = response.data
         })
         this.setState({pendingRequests: pendingRequests})

@@ -97,7 +97,7 @@ class App extends React.Component {
     x.style.display = "none";
     this.setState({ isLoggedIn: false })
     this.setState({user: null })
-    NotificationManager.info('Signed Out Successful!', '', 3000);
+    NotificationManager.info(CONSTANTS.MSG_SIGNOUT_SUCCESS, '', 3000);
   }
 
   render() {

@@ -3,6 +3,8 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css"
 import './CSS/welcome.css'
 import {NotificationContainer, NotificationManager} from 'react-notifications';
+import CONSTANTS from './CONSTANTS';
+
 
 
 class LeaveApply extends React.Component {
@@ -31,7 +33,7 @@ class LeaveApply extends React.Component {
         this.setState({toDate: null })
         this.setState({clickApplied: true })
         this.setState({clickedCancel: false })
-        NotificationManager.success('Successfully Created', '', 3000);
+        NotificationManager.success(CONSTANTS.APPLY_LEAVE_SUCCESS, '', 3000);
         
       }
 
